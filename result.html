@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        .container{
+            height: min-content;
+            display: flex;
+            justify-content: center;
+            padding-top: 3rem;
+        }
+        .weather-body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .weather-body img{
+            height: 25rem;
+            width: min-content;
+        }
+        .weather-box .temp {
+            padding-top: 2rem;
+            padding-left: 7rem;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        sup {
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .weather-box .des {
+            padding-top: 2rem;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        .weather-details {
+            width: 25rem;
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        .humidity {
+            display: flex;
+        }
+        .wind {
+            display: flex;
+        }
+        span {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 20px;
+        }
+        i {
+           font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-body">
+            <img src="allimage/rain.png" alt="Weather Image" class="weather-image">
+            <div class="weather-box">
+                <p class="temp">0<sup>°C</sup></p>
+                <p class="des">Light Rain</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fas fa-tint"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12Km/Hr</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d521691a28.js" crossorigin="anonymous"></script>
+</body>
+</html>

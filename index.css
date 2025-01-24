@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container input {
+    height: 2.5rem;
+    width: 30rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font-style: italic;
+    font-size: medium;
+}
+
+.button{
+    padding-left: 1rem;
+}
+
+.button button{
+    height: 2rem;
+    width: 4rem;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:600px) {
+
+.container input{
+    width: 20rem;
+}
+    
+}
+
+.container.upword {
+    transform: translateY(-10rem);
+}
